@@ -63,10 +63,10 @@ kotlin {
             implementation(libs.ktor.serialization.json)
         }
         wasmJsMain.dependencies {
-            implementation("io.ktor:ktor-client-cio:3.4.3")
+            implementation(libs.ktor.client.cio)
         }
         jsMain.dependencies {
-            implementation("io.ktor:ktor-client-cio:3.4.3")
+            implementation(libs.ktor.client.cio)
         }
         commonTest.dependencies {
             implementation(libs.kotlin.test)
